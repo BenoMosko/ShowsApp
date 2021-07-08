@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <div>
+            <h2>Shows With That Genre</h2>
+            <a routerLink="">Back To Show Select</a><br><br>
+            <table border="1">
+               <td><b>Name</b></td><td><b>Genre</b></td><td><b>Language</b></td><td><b>Image</b></td>
+                <tr *ngFor="let table of tables">
+                    <template [ *ngIf ]= "readLocalStorageValue('genre')" > </template>
+                    <td>{{table.name}}</td>
+                    <td>{{table.genres}}</td>
+                    <td>{{table.language}}</td>
+                    <td><img src={{table.image?.medium}} alt=""></td>
+                </tr>
+            </table>
+
+        </div>
+    </body>
+</html>

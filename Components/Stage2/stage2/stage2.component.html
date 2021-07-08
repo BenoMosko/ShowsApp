@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <div>
+            <h3>Show Details</h3>
+            <a routerLink="">Back to Show Select</a><br><br>
+            Name: {{show.name}}<br>
+            Language: {{show.language}}<br>
+            Genre : {{show.genres}}<br><br>
+            <img [src]="show.image?.medium"><br><br>
+            <input type="button" value="More Shows With That Genre" (click)="toTable()">
+        </div>
+    </body>
+</html>

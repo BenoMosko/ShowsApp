@@ -1,0 +1,11 @@
+div
+{
+    margin-left: 710px;
+    background-color: lightgrey;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    height: 421px;
+    width: 400px;
+    position: fixed;
+}

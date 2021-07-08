@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <div>
+            <h2>Pick a Show</h2>
+            <select #show (change)="select(show.value)">
+                <option value="Select">Select</option>
+                <option [value]="show.id" *ngFor="let show of shows">{{show.name}}</option>
+            </select>
+        </div>
+    </body>
+</html>
